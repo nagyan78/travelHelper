@@ -1,0 +1,145 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+spring:
+  application:
+    name: travel-itinerary
+  
+  # MVC 路径匹配策略（修复 Swagger 兼容性问题）
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  
+  # 数据源配置 (MySQL 8.0)
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/travel_itinerary?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    username: root
+    password: ${DB_PASSWORD:123456}
+    hikari:
+      minimum-idle: 5
+      maximum-pool-size: 20
+      auto-commit: true
+      idle-timeout: 30000
+      pool-name: TravelHikariCP
+      max-lifetime: 1800000
+      connection-timeout: 30000
+  
+  # Redis配置 (Redis 5.0.14)
+  redis:
+    host: ${REDIS_HOST:localhost}
+    port: ${REDIS_PORT:6379}
+    password: ${REDIS_PASSWORD:}
+    database: 0
+    timeout: 3000ms
+    lettuce:
+      pool:
+        max-active: 8
+        max-wait: -1ms
+        max-idle: 8
+        min-idle: 0
+  
+  # RabbitMQ配置 (RabbitMQ 4.2.3)
+  rabbitmq:
+    host: ${MQ_HOST:localhost}
+    port: ${MQ_PORT:5672}
+    username: ${MQ_USERNAME:guest}
+    password: ${MQ_PASSWORD:guest}
+    virtual-host: /
+    listener:
+      simple:
+        acknowledge-mode: manual
+        concurrency: 5
+        max-concurrency: 10
+  
+  # 文件上传配置
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 5MB
+      max-request-size: 10MB
+
+# MyBatis-Plus配置
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**/*.xml
+  type-aliases-package: com.travel.itinerary.module.*.entity
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: true
+    log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
+  global-config:
+    db-config:
+      id-type: auto
+      logic-delete-field: isDeleted
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+
+# JWT配置
+jwt:
+  secret: ${JWT_SECRET:travel-itinerary-secret-key-2024-very-long-string-for-security}
+  expiration: 1800  # 30分钟(秒)
+  refresh-expiration: 604800  # 7天(秒)
+
+# 阿里云通义千问配置
+aliyun:
+  tongyi:
+    api-key: ${TONGYI_API_KEY:your-api-key-here}
+    api-url: https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation
+    model: qwen-max
+    temperature: 0.7
+    max-tokens: 4000
+    timeout: 30000
+
+# 天气API配置
+weather:
+  api-key: ${WEATHER_API_KEY:your-api-key-here}
+  api-url: https://api.qweather.com/v7/weather/forecast
+  cache:
+    hours: 1
+
+# 地图API配置(高德地图)
+amap:
+  api-key: ${AMAP_API_KEY:your-api-key-here}
+  api-url: https://restapi.amap.com/v3
+
+# 日志配置
+logging:
+  level:
+    root: INFO
+    com.travel.itinerary: DEBUG
+    org.springframework.security: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n"
+  file:
+    name: logs/travel-itinerary.log
+    max-size: 100MB
+    max-history: 30
+
+# Knife4j(Swagger)配置
+knife4j:
+  enable: false  # 暂时禁用以解决 Spring Boot 2.6+ 兼容性问题
+  setting:
+    language: zh_cn
+
+# 应用自定义配置
+app:
+  # 攻略草稿自动保存间隔(毫秒)
+  itinerary:
+    draft:
+      auto-save-interval: 30000
+    # 攻略最大天数限制
+    max-days: 30
+    # 每日最多时间段数
+    max-time-slots-per-day: 20
+  
+  # 限流配置
+  rate-limit:
+    login:
+      max-attempts: 5
+      time-window: 60  # 秒
+    generate-itinerary:
+      max-attempts: 3
+      time-window: 60
