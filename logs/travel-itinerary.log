@@ -1,0 +1,315 @@
+2026-05-28 15:03:43.744 [main] INFO  com.travel.itinerary.TravelApplication - Starting TravelApplication v1.0.0 using Java 11.0.16.1 on T22 with PID 5844 (D:\MyProject\travel\travel-backend\target\travel-itinerary-1.0.0.jar started by 30616 in D:\MyProject\travel\travel-backend)
+2026-05-28 15:03:43.757 [main] DEBUG com.travel.itinerary.TravelApplication - Running with Spring Boot v2.7.18, Spring v5.3.31
+2026-05-28 15:03:43.757 [main] INFO  com.travel.itinerary.TravelApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-28 15:03:44.490 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-05-28 15:03:44.495 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-05-28 15:03:44.528 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2026-05-28 15:03:45.537 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2026-05-28 15:03:45.545 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-28 15:03:45.545 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2026-05-28 15:03:45.619 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-28 15:03:45.619 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1813 ms
+2026-05-28 15:03:45.995 [main] INFO  org.redisson.Version - Redisson 3.25.0
+2026-05-28 15:03:48.445 [redisson-netty-2-5] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
+2026-05-28 15:03:48.518 [redisson-netty-2-14] INFO  org.redisson.connection.pool.MasterConnectionPool - 5 connections initialized for localhost/127.0.0.1:6379
+2026-05-28 15:03:51.986 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 569d2f9a-ae61-4f50-aa40-ad60715a204d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-28 15:03:52.397 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/api/user/login']
+2026-05-28 15:03:52.475 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/api/user/register']
+2026-05-28 15:03:52.477 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/api/analyzer/**']
+2026-05-28 15:03:52.478 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/api/budget/estimate']
+2026-05-28 15:03:52.479 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/api/budget/allocation']
+2026-05-28 15:03:52.480 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/actuator/health']
+2026-05-28 15:03:52.481 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [authenticated] for any request
+2026-05-28 15:03:52.518 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@46d63dbb, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4088741b, org.springframework.security.web.context.SecurityContextPersistenceFilter@4eb45fec, org.springframework.security.web.header.HeaderWriterFilter@5496c165, org.springframework.security.web.authentication.logout.LogoutFilter@1416a80a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3bd3d05e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6aba5d30, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@16a49a5d, org.springframework.security.web.session.SessionManagementFilter@2009f9b0, org.springframework.security.web.access.ExceptionTranslationFilter@1ff55ff, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1e530163]
+2026-05-28 15:03:55.102 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-05-28 15:03:55.288 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2026-05-28 15:03:55.350 [main] INFO  com.travel.itinerary.TravelApplication - Started TravelApplication in 12.025 seconds (JVM running for 12.4)
+2026-05-28 15:04:10.551 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-28 15:04:10.552 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-28 15:04:10.557 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2026-05-28 15:04:10.596 [http-nio-8080-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Securing POST /api/analyzer/analyze
+2026-05-28 15:04:10.608 [http-nio-8080-exec-1] DEBUG o.s.s.web.context.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2026-05-28 15:04:10.620 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-05-28 15:04:10.643 [http-nio-8080-exec-1] DEBUG o.s.s.w.access.intercept.FilterSecurityInterceptor - Authorized filter invocation [POST /api/analyzer/analyze] with attributes [permitAll]
+2026-05-28 15:04:10.646 [http-nio-8080-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Secured POST /api/analyzer/analyze
+2026-05-28 15:04:10.693 [http-nio-8080-exec-1] WARN  c.t.i.common.exception.GlobalExceptionHandler - 业务异常: Token 无效或格式错误
+2026-05-28 15:04:10.872 [http-nio-8080-exec-1] DEBUG o.s.s.web.context.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2026-05-28 18:27:36.818 [main] INFO  com.travel.itinerary.TravelApplication - Starting TravelApplication v1.0.0 using Java 11.0.16.1 on T22 with PID 23980 (D:\MyProject\travel\travel-backend\target\travel-itinerary-1.0.0.jar started by 30616 in D:\MyProject\travel\travel-backend)
+2026-05-28 18:27:36.820 [main] DEBUG com.travel.itinerary.TravelApplication - Running with Spring Boot v2.7.18, Spring v5.3.31
+2026-05-28 18:27:36.821 [main] INFO  com.travel.itinerary.TravelApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-28 18:27:37.520 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-05-28 18:27:37.522 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-05-28 18:27:37.540 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2026-05-28 18:27:38.416 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2026-05-28 18:27:38.423 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-28 18:27:38.424 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2026-05-28 18:27:38.483 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-28 18:27:38.483 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1616 ms
+2026-05-28 18:27:38.868 [main] INFO  org.redisson.Version - Redisson 3.25.0
+2026-05-28 18:27:39.393 [redisson-netty-2-5] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
+2026-05-28 18:27:39.410 [redisson-netty-2-14] INFO  org.redisson.connection.pool.MasterConnectionPool - 5 connections initialized for localhost/127.0.0.1:6379
+2026-05-28 18:27:40.707 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 7b0e2c2c-9ac4-4947-913b-13adcd6d0d60
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-28 18:27:40.804 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for EndpointRequestMatcher includes=[health], excludes=[], includeLinks=false
+2026-05-28 18:27:40.817 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [authenticated] for any request
+2026-05-28 18:27:40.830 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-05-28 18:27:40.841 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3662bdff, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1bb15351, org.springframework.security.web.context.SecurityContextPersistenceFilter@2d64c100, org.springframework.security.web.header.HeaderWriterFilter@3d64c581, org.springframework.web.filter.CorsFilter@4fa822ad, org.springframework.security.web.csrf.CsrfFilter@6a6f6c7e, org.springframework.security.web.authentication.logout.LogoutFilter@5e1dde44, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@661d88a, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@79c5460e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@597f0937, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@404db674, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2fdf17dc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6e6d4780, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7ad1caa2, org.springframework.security.web.session.SessionManagementFilter@4190bc8a, org.springframework.security.web.access.ExceptionTranslationFilter@6732726, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7e7f3cfd]
+2026-05-28 18:27:40.955 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2026-05-28 18:27:40.968 [main] INFO  com.travel.itinerary.TravelApplication - Started TravelApplication in 4.542 seconds (JVM running for 4.914)
+2026-05-28 18:35:20.189 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-28 18:35:20.189 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-28 18:35:20.191 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-05-28 18:35:20.198 [http-nio-8080-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /actuator/health
+2026-05-28 18:35:20.201 [http-nio-8080-exec-1] DEBUG o.s.s.web.context.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2026-05-28 18:35:20.209 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-05-28 18:35:20.216 [http-nio-8080-exec-1] DEBUG o.s.s.w.access.intercept.FilterSecurityInterceptor - Authorized filter invocation [GET /actuator/health] with attributes [permitAll]
+2026-05-28 18:35:20.217 [http-nio-8080-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /actuator/health
+2026-05-28 18:35:20.238 [http-nio-8080-exec-1] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2026-05-28 18:35:20.346 [http-nio-8080-exec-1] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#337bbfdf:0/SimpleConnection@7af41662 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 10688]
+2026-05-28 18:35:20.372 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - TravelHikariCP - Starting...
+2026-05-28 18:35:20.516 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - TravelHikariCP - Start completed.
+2026-05-28 18:35:20.603 [http-nio-8080-exec-1] DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Did not store anonymous SecurityContext
+2026-05-28 18:35:20.605 [http-nio-8080-exec-1] DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Did not store anonymous SecurityContext
+2026-05-28 18:35:20.605 [http-nio-8080-exec-1] DEBUG o.s.s.web.context.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2026-05-28 18:35:24.016 [http-nio-8080-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Securing POST /api/analyzer/analyze
+2026-05-28 18:35:24.016 [http-nio-8080-exec-2] DEBUG o.s.s.web.context.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2026-05-28 18:35:24.199 [http-nio-8080-exec-2] WARN  org.apache.catalina.util.SessionIdGeneratorBase - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [181] milliseconds.
+2026-05-28 18:35:24.210 [http-nio-8080-exec-2] DEBUG org.springframework.security.web.csrf.CsrfFilter - Invalid CSRF token found for http://localhost:8080/api/analyzer/analyze
+2026-05-28 18:35:24.210 [http-nio-8080-exec-2] DEBUG o.s.security.web.access.AccessDeniedHandlerImpl - Responding with 403 status code
+2026-05-28 18:35:24.210 [http-nio-8080-exec-2] DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Did not store empty SecurityContext
+2026-05-28 18:35:24.210 [http-nio-8080-exec-2] DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Did not store empty SecurityContext
+2026-05-28 18:35:24.210 [http-nio-8080-exec-2] DEBUG o.s.s.web.context.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2026-05-28 18:35:24.210 [http-nio-8080-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Securing POST /error
+2026-05-28 18:35:24.210 [http-nio-8080-exec-2] DEBUG o.s.s.web.context.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2026-05-28 18:35:24.210 [http-nio-8080-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-05-28 18:35:24.210 [http-nio-8080-exec-2] DEBUG o.s.s.w.access.intercept.FilterSecurityInterceptor - Failed to authorize filter invocation [POST /error] with attributes [authenticated]
+2026-05-28 18:35:24.214 [http-nio-8080-exec-2] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.HeaderContentNegotiationStrategy@4e6a9316, matchingMediaTypes=[application/xhtml+xml, image/*, text/html, text/plain], useEquals=false, ignoredMediaTypes=[*/*]]]
+2026-05-28 18:35:24.214 [http-nio-8080-exec-2] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using Or [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest], And [Not [MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.HeaderContentNegotiationStrategy@49e89824, matchingMediaTypes=[text/html], useEquals=false, ignoredMediaTypes=[]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.HeaderContentNegotiationStrategy@49e89824, matchingMediaTypes=[application/atom+xml, application/x-www-form-urlencoded, application/json, application/octet-stream, application/xml, multipart/form-data, text/xml], useEquals=false, ignoredMediaTypes=[*/*]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.HeaderContentNegotiationStrategy@49e89824, matchingMediaTypes=[*/*], useEquals=true, ignoredMediaTypes=[]]]
+2026-05-28 18:35:24.215 [http-nio-8080-exec-2] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Match found! Executing org.springframework.security.web.authentication.DelegatingAuthenticationEntryPoint@43a65cd8
+2026-05-28 18:35:24.215 [http-nio-8080-exec-2] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2026-05-28 18:35:24.215 [http-nio-8080-exec-2] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@3ddcbfab
+2026-05-28 18:35:24.216 [http-nio-8080-exec-2] DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Did not store empty SecurityContext
+2026-05-28 18:35:24.216 [http-nio-8080-exec-2] DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Did not store empty SecurityContext
+2026-05-28 18:35:24.216 [http-nio-8080-exec-2] DEBUG o.s.s.web.context.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2026-05-28 18:35:27.568 [http-nio-8080-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Securing POST /api/user/register
+2026-05-28 18:35:27.568 [http-nio-8080-exec-3] DEBUG o.s.s.web.context.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2026-05-28 18:35:27.568 [http-nio-8080-exec-3] DEBUG org.springframework.security.web.csrf.CsrfFilter - Invalid CSRF token found for http://localhost:8080/api/user/register
+2026-05-28 18:35:27.568 [http-nio-8080-exec-3] DEBUG o.s.security.web.access.AccessDeniedHandlerImpl - Responding with 403 status code
+2026-05-28 18:35:27.568 [http-nio-8080-exec-3] DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Did not store empty SecurityContext
+2026-05-28 18:35:27.568 [http-nio-8080-exec-3] DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Did not store empty SecurityContext
+2026-05-28 18:35:27.568 [http-nio-8080-exec-3] DEBUG o.s.s.web.context.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2026-05-28 18:35:27.568 [http-nio-8080-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Securing POST /error
+2026-05-28 18:35:27.568 [http-nio-8080-exec-3] DEBUG o.s.s.web.context.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2026-05-28 18:35:27.568 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-05-28 18:35:27.568 [http-nio-8080-exec-3] DEBUG o.s.s.w.access.intercept.FilterSecurityInterceptor - Failed to authorize filter invocation [POST /error] with attributes [authenticated]
+2026-05-28 18:35:27.568 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.HeaderContentNegotiationStrategy@4e6a9316, matchingMediaTypes=[application/xhtml+xml, image/*, text/html, text/plain], useEquals=false, ignoredMediaTypes=[*/*]]]
+2026-05-28 18:35:27.568 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using Or [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest], And [Not [MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.HeaderContentNegotiationStrategy@49e89824, matchingMediaTypes=[text/html], useEquals=false, ignoredMediaTypes=[]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.HeaderContentNegotiationStrategy@49e89824, matchingMediaTypes=[application/atom+xml, application/x-www-form-urlencoded, application/json, application/octet-stream, application/xml, multipart/form-data, text/xml], useEquals=false, ignoredMediaTypes=[*/*]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.HeaderContentNegotiationStrategy@49e89824, matchingMediaTypes=[*/*], useEquals=true, ignoredMediaTypes=[]]]
+2026-05-28 18:35:27.568 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Match found! Executing org.springframework.security.web.authentication.DelegatingAuthenticationEntryPoint@43a65cd8
+2026-05-28 18:35:27.568 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2026-05-28 18:35:27.568 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@3ddcbfab
+2026-05-28 18:35:27.568 [http-nio-8080-exec-3] DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Did not store empty SecurityContext
+2026-05-28 18:35:27.568 [http-nio-8080-exec-3] DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Did not store empty SecurityContext
+2026-05-28 18:35:27.568 [http-nio-8080-exec-3] DEBUG o.s.s.web.context.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2026-05-28 18:35:30.818 [http-nio-8080-exec-5] DEBUG org.springframework.security.web.FilterChainProxy - Securing POST /api/user/login
+2026-05-28 18:35:30.818 [http-nio-8080-exec-5] DEBUG o.s.s.web.context.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2026-05-28 18:35:30.820 [http-nio-8080-exec-5] DEBUG org.springframework.security.web.csrf.CsrfFilter - Invalid CSRF token found for http://localhost:8080/api/user/login
+2026-05-28 18:35:30.820 [http-nio-8080-exec-5] DEBUG o.s.security.web.access.AccessDeniedHandlerImpl - Responding with 403 status code
+2026-05-28 18:35:30.820 [http-nio-8080-exec-5] DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Did not store empty SecurityContext
+2026-05-28 18:35:30.820 [http-nio-8080-exec-5] DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Did not store empty SecurityContext
+2026-05-28 18:35:30.820 [http-nio-8080-exec-5] DEBUG o.s.s.web.context.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2026-05-28 18:35:30.821 [http-nio-8080-exec-5] DEBUG org.springframework.security.web.FilterChainProxy - Securing POST /error
+2026-05-28 18:35:30.821 [http-nio-8080-exec-5] DEBUG o.s.s.web.context.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2026-05-28 18:35:30.821 [http-nio-8080-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-05-28 18:35:30.821 [http-nio-8080-exec-5] DEBUG o.s.s.w.access.intercept.FilterSecurityInterceptor - Failed to authorize filter invocation [POST /error] with attributes [authenticated]
+2026-05-28 18:35:30.821 [http-nio-8080-exec-5] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.HeaderContentNegotiationStrategy@4e6a9316, matchingMediaTypes=[application/xhtml+xml, image/*, text/html, text/plain], useEquals=false, ignoredMediaTypes=[*/*]]]
+2026-05-28 18:35:30.821 [http-nio-8080-exec-5] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using Or [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest], And [Not [MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.HeaderContentNegotiationStrategy@49e89824, matchingMediaTypes=[text/html], useEquals=false, ignoredMediaTypes=[]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.HeaderContentNegotiationStrategy@49e89824, matchingMediaTypes=[application/atom+xml, application/x-www-form-urlencoded, application/json, application/octet-stream, application/xml, multipart/form-data, text/xml], useEquals=false, ignoredMediaTypes=[*/*]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.HeaderContentNegotiationStrategy@49e89824, matchingMediaTypes=[*/*], useEquals=true, ignoredMediaTypes=[]]]
+2026-05-28 18:35:30.821 [http-nio-8080-exec-5] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Match found! Executing org.springframework.security.web.authentication.DelegatingAuthenticationEntryPoint@43a65cd8
+2026-05-28 18:35:30.821 [http-nio-8080-exec-5] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2026-05-28 18:35:30.821 [http-nio-8080-exec-5] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@3ddcbfab
+2026-05-28 18:35:30.821 [http-nio-8080-exec-5] DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Did not store empty SecurityContext
+2026-05-28 18:35:30.821 [http-nio-8080-exec-5] DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Did not store empty SecurityContext
+2026-05-28 18:35:30.821 [http-nio-8080-exec-5] DEBUG o.s.s.web.context.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2026-05-28 18:44:16.454 [main] INFO  com.travel.itinerary.TravelApplication - Starting TravelApplication v1.0.0 using Java 11.0.16.1 on T22 with PID 10428 (D:\MyProject\travel\travel-backend\target\travel-itinerary-1.0.0.jar started by 30616 in D:\MyProject\travel\travel-backend)
+2026-05-28 18:44:16.457 [main] DEBUG com.travel.itinerary.TravelApplication - Running with Spring Boot v2.7.18, Spring v5.3.31
+2026-05-28 18:44:16.458 [main] INFO  com.travel.itinerary.TravelApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-28 18:44:17.189 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-05-28 18:44:17.192 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-05-28 18:44:17.213 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2026-05-28 18:44:18.130 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2026-05-28 18:44:18.138 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-28 18:44:18.138 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2026-05-28 18:44:18.197 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-28 18:44:18.197 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1683 ms
+2026-05-28 18:44:18.578 [main] INFO  org.redisson.Version - Redisson 3.25.0
+2026-05-28 18:44:19.049 [redisson-netty-2-5] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
+2026-05-28 18:44:19.066 [redisson-netty-2-14] INFO  org.redisson.connection.pool.MasterConnectionPool - 5 connections initialized for localhost/127.0.0.1:6379
+2026-05-28 18:44:19.731 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 45a3d432-34bf-4a7e-a452-0149dbe0292a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-28 18:44:19.808 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/api/user/login']
+2026-05-28 18:44:19.823 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/api/user/register']
+2026-05-28 18:44:19.823 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/api/analyzer/**']
+2026-05-28 18:44:19.824 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/api/budget/estimate']
+2026-05-28 18:44:19.824 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/api/budget/allocation']
+2026-05-28 18:44:19.824 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/actuator/health']
+2026-05-28 18:44:19.824 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [authenticated] for any request
+2026-05-28 18:44:19.830 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@53a665ad, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2c0b4c83, org.springframework.security.web.context.SecurityContextPersistenceFilter@2f508f3c, org.springframework.security.web.header.HeaderWriterFilter@165e389b, org.springframework.security.web.authentication.logout.LogoutFilter@1d0a61c8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4aedaf61, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@173797f0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@78525ef9, org.springframework.security.web.session.SessionManagementFilter@763cf5b9, org.springframework.security.web.access.ExceptionTranslationFilter@204e90f7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@61f39bb]
+2026-05-28 18:44:20.680 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-05-28 18:44:20.718 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2026-05-28 18:44:20.743 [main] INFO  com.travel.itinerary.TravelApplication - Started TravelApplication in 4.716 seconds (JVM running for 5.111)
+2026-05-28 18:44:31.327 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-28 18:44:31.328 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-28 18:44:31.329 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-05-28 18:44:31.334 [http-nio-8080-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /actuator/health
+2026-05-28 18:44:31.337 [http-nio-8080-exec-1] DEBUG o.s.s.web.context.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2026-05-28 18:44:31.340 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-05-28 18:44:31.345 [http-nio-8080-exec-1] DEBUG o.s.s.w.access.intercept.FilterSecurityInterceptor - Authorized filter invocation [GET /actuator/health] with attributes [permitAll]
+2026-05-28 18:44:31.346 [http-nio-8080-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /actuator/health
+2026-05-28 18:44:31.369 [http-nio-8080-exec-1] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2026-05-28 18:44:31.414 [http-nio-8080-exec-1] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#2d64160c:0/SimpleConnection@10f2ced [delegate=amqp://guest@127.0.0.1:5672/, localPort= 1362]
+2026-05-28 18:44:31.437 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - TravelHikariCP - Starting...
+2026-05-28 18:44:31.552 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - TravelHikariCP - Start completed.
+2026-05-28 18:44:31.651 [http-nio-8080-exec-1] DEBUG o.s.s.web.context.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2026-05-28 18:44:39.470 [http-nio-8080-exec-7] DEBUG org.springframework.security.web.FilterChainProxy - Securing POST /api/analyzer/analyze
+2026-05-28 18:44:39.470 [http-nio-8080-exec-7] DEBUG o.s.s.web.context.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+2026-05-28 18:44:39.470 [http-nio-8080-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-05-28 18:44:39.470 [http-nio-8080-exec-7] DEBUG o.s.s.w.access.intercept.FilterSecurityInterceptor - Authorized filter invocation [POST /api/analyzer/analyze] with attributes [permitAll]
+2026-05-28 18:44:39.471 [http-nio-8080-exec-7] DEBUG org.springframework.security.web.FilterChainProxy - Secured POST /api/analyzer/analyze
+2026-05-28 18:44:39.473 [http-nio-8080-exec-7] WARN  c.t.i.common.exception.GlobalExceptionHandler - 业务异常: Token 无效或格式错误
+2026-05-28 18:44:39.477 [http-nio-8080-exec-7] DEBUG o.s.s.web.context.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+2026-05-28 18:46:02.027 [main] INFO  com.travel.itinerary.TravelApplication - Starting TravelApplication v1.0.0 using Java 11.0.16.1 on T22 with PID 18864 (D:\MyProject\travel\travel-backend\target\travel-itinerary-1.0.0.jar started by 30616 in D:\MyProject\travel\travel-backend)
+2026-05-28 18:46:02.031 [main] DEBUG com.travel.itinerary.TravelApplication - Running with Spring Boot v2.7.18, Spring v5.3.31
+2026-05-28 18:46:02.032 [main] INFO  com.travel.itinerary.TravelApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-28 18:46:02.820 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-05-28 18:46:02.823 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-05-28 18:46:02.842 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2026-05-28 18:46:02.976 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Cannot load configuration class: com.travel.itinerary.common.config.WebConfig
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:415)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanFactory(ConfigurationClassPostProcessor.java:268)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:325)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:147)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:756)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:572)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:409)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1289)
+	at com.travel.itinerary.TravelApplication.main(TravelApplication.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65)
+Caused by: java.lang.UnsupportedClassVersionError: com/travel/itinerary/common/config/WebConfig has been compiled by a more recent version of the Java Runtime (class file version 61.0), this version of the Java Runtime only recognizes class file versions up to 55.0
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1017)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:174)
+	at java.base/java.net.URLClassLoader.defineClass(URLClassLoader.java:555)
+	at java.base/java.net.URLClassLoader$1.run(URLClassLoader.java:458)
+	at java.base/java.net.URLClassLoader$1.run(URLClassLoader.java:452)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:451)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:589)
+	at org.springframework.boot.loader.LaunchedURLClassLoader.loadClass(LaunchedURLClassLoader.java:151)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:398)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:469)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:411)
+	... 20 common frames omitted
+2026-05-28 18:46:02.980 [main] WARN  org.springframework.boot.SpringApplication - Unable to close ApplicationContext
+org.springframework.beans.factory.CannotLoadBeanClassException: Error loading class [com.travel.itinerary.common.config.WebConfig] for bean with name 'webConfig' defined in URL [jar:file:/D:/MyProject/travel/travel-backend/target/travel-itinerary-1.0.0.jar!/BOOT-INF/classes!/com/travel/itinerary/common/config/WebConfig.class]: problem with class file or dependent class; nested exception is java.lang.UnsupportedClassVersionError: com/travel/itinerary/common/config/WebConfig has been compiled by a more recent version of the Java Runtime (class file version 61.0), this version of the Java Runtime only recognizes class file versions up to 55.0
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1559)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:704)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:674)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1684)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:570)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:669)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:661)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1314)
+	at org.springframework.boot.SpringApplication.getExitCodeFromMappedException(SpringApplication.java:861)
+	at org.springframework.boot.SpringApplication.getExitCodeFromException(SpringApplication.java:849)
+	at org.springframework.boot.SpringApplication.handleExitCode(SpringApplication.java:836)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:776)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1289)
+	at com.travel.itinerary.TravelApplication.main(TravelApplication.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65)
+Caused by: java.lang.UnsupportedClassVersionError: com/travel/itinerary/common/config/WebConfig has been compiled by a more recent version of the Java Runtime (class file version 61.0), this version of the Java Runtime only recognizes class file versions up to 55.0
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1017)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:174)
+	at java.base/java.net.URLClassLoader.defineClass(URLClassLoader.java:555)
+	at java.base/java.net.URLClassLoader$1.run(URLClassLoader.java:458)
+	at java.base/java.net.URLClassLoader$1.run(URLClassLoader.java:452)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:451)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:589)
+	at org.springframework.boot.loader.LaunchedURLClassLoader.loadClass(LaunchedURLClassLoader.java:151)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:398)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:469)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1621)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1548)
+	... 24 common frames omitted
+2026-05-28 18:46:34.172 [main] INFO  com.travel.itinerary.TravelApplication - Starting TravelApplication v1.0.0 using Java 11.0.16.1 on T22 with PID 4464 (D:\MyProject\travel\travel-backend\target\travel-itinerary-1.0.0.jar started by 30616 in D:\MyProject\travel\travel-backend)
+2026-05-28 18:46:34.174 [main] DEBUG com.travel.itinerary.TravelApplication - Running with Spring Boot v2.7.18, Spring v5.3.31
+2026-05-28 18:46:34.175 [main] INFO  com.travel.itinerary.TravelApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-28 18:46:34.956 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-05-28 18:46:34.973 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-05-28 18:46:34.992 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2026-05-28 18:46:35.923 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2026-05-28 18:46:35.923 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-28 18:46:35.923 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2026-05-28 18:46:35.990 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-28 18:46:35.990 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1757 ms
+2026-05-28 18:46:36.339 [main] INFO  org.redisson.Version - Redisson 3.25.0
+2026-05-28 18:46:36.822 [redisson-netty-2-5] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
+2026-05-28 18:46:36.822 [redisson-netty-2-14] INFO  org.redisson.connection.pool.MasterConnectionPool - 5 connections initialized for localhost/127.0.0.1:6379
+2026-05-28 18:46:37.473 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: f4b7f2be-5e40-4460-bcdc-2b7d8e264763
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-28 18:46:37.563 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/api/user/login']
+2026-05-28 18:46:37.577 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/api/user/register']
+2026-05-28 18:46:37.578 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/api/analyzer/**']
+2026-05-28 18:46:37.578 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/api/budget/estimate']
+2026-05-28 18:46:37.578 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/api/budget/allocation']
+2026-05-28 18:46:37.578 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/actuator/health']
+2026-05-28 18:46:37.578 [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [authenticated] for any request
+2026-05-28 18:46:37.580 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4893b344, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@53a665ad, org.springframework.security.web.context.SecurityContextPersistenceFilter@7a34f66a, org.springframework.security.web.header.HeaderWriterFilter@20a05b32, org.springframework.security.web.authentication.logout.LogoutFilter@228cea97, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3ed03652, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4aedaf61, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2c0b4c83, org.springframework.security.web.session.SessionManagementFilter@e4b6f47, org.springframework.security.web.access.ExceptionTranslationFilter@31ff6309, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2aa6311a]
+2026-05-28 18:46:38.390 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-05-28 18:46:38.426 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2026-05-28 18:46:38.441 [main] INFO  com.travel.itinerary.TravelApplication - Started TravelApplication in 4.696 seconds (JVM running for 5.068)
